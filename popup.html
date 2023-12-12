@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>tab notification test</title>
+    <title>ADvoid Master</title>
+    <style>
+        html, body {
+            width: 200px; /* 宽度 */
+            height: 300px; /* 高度 */
+            display: flex; /* 使用Flexbox */
+            justify-content: center; /* 水平居中 */
+            padding: 0;
+            overflow: hidden; /* 防止滚动条出现 */
+
+        }
+
+        #container {
+            /* 调整容器的样式 */
+            width: 60%; /* 宽度为父元素的80% */
+    height: 60%; /* 高度为父元素的80% */
+    display: flex; /* 使用Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin: auto
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            margin: 0;
+            height: 100vh;
+            background-color:rgba(255,0,0,0.2);
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            perspective: 500px;
+        }
+        
+        div {
+            position: absolute;
+            width: 60vw;
+            height: 60vh;
+            inset: 0;
+            margin: auto;
+            box-shadow: 0 2px 5px 1px rgba(0,0,0,0.15), 0 -10px 20px -5px rgba(0,0,0,0.3) inset, 0 150px 100px -80px rgba(0,0,0,0.4);
+            transition: all .3s ease;
+        }
+        
+        span {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(var(--blur));
+            -webkit-backdrop-filter: blur(var(--blur));
+            transition: all 1s ease;
+        }
+        span:nth-of-type(1) {
+            --blur: 24px;
+        }
+        span:nth-of-type(2) {
+            --blur: 20px;
+        }
+        span:nth-of-type(3) {
+            --blur: 16px;
+        }
+        span:nth-of-type(4) {
+            --blur: 12px;
+        }
+        span:nth-of-type(5) {
+            --blur: 8px;
+        }
+        span:nth-of-type(6) {
+            --blur: 4px;
+        }
+        span:nth-of-type(7) {
+            --blur: 2px;
+        }
+        span:nth-of-type(8) {
+            --blur: 0px;
+        }
+        
+ 
+    </style>
 </head>
 <body>
-    <h1>test</h1>
-    <p>popup.html test</p>
-    <script src="popup.js"></script>
+    <h1>ADvoid Master</h1>
+    <p></p>
+    <div id="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </body>
 </html>
