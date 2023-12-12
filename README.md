@@ -15,11 +15,13 @@
 3. open "開發人員模式" and click "載入未封裝項目"
     ![a](https://hackmd.io/_uploads/HJAVZ8r86.png)
 4. Disable other Chrome extensions that may cause interference or conflicts.
-5. Select the directory where the file is located.
-6. You can click "Service worker" to open the dev tool and monitor the details.
+5. Turn off Do Not Disturb mode to ensure system notifications can appear.
+6. Select the directory where the file is located.
+7. You can click "Service worker" to open the dev tool and monitor the details.
     ![b](https://hackmd.io/_uploads/B1fZGUH8a.png)
 
 ---
 ### Limitations
 1. Must use the Chinese version of YouTube. Otherwise, muting may fail.
-2. 
+2. Due to YouTube's continuous changes to the DOM, this version may become unusable in the future.
+
