@@ -1,3 +1,4 @@
+
 chrome.tabs.onCreated.addListener(function() {
     chrome.notifications.create({
         type: 'basic',
